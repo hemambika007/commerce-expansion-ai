@@ -1,5 +1,5 @@
 import React from 'react';
-import { TrendingUp, Users, MapPin, Package, ArrowUpRight, ArrowDownRight } from 'lucide-react';
+import { TrendingUp, Users, MapPin, Package, ArrowUpRight, ArrowDownRight, BarChart3, Target } from 'lucide-react';
 
 const Dashboard = () => {
   const marketMetrics = [
