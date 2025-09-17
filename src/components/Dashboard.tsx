@@ -272,7 +272,7 @@ const Dashboard = () => {
           
           <div className="bg-gradient-to-r from-blue-600/20 to-purple-600/20 rounded-xl p-6 border border-blue-500/30">
             <h3 className="text-xl font-semibold text-blue-300 mb-3">Composite Scoring Algorithm</h3>
-            <p className="text-slate-300 mb-4">Our proprietary algorithm weighs each factor based on e-commerce success correlation:</p>
+            <p className="text-slate-300 mb-4">Our ML-powered algorithm weighs each factor based on historical e-commerce success data:</p>
             <div className="grid grid-cols-2 md:grid-cols-5 gap-4 text-sm">
               <div className="text-center">
                 <div className="text-2xl font-bold text-blue-400">25%</div>
@@ -294,6 +294,12 @@ const Dashboard = () => {
                 <div className="text-2xl font-bold text-pink-400">15%</div>
                 <div className="text-slate-400">Economic</div>
               </div>
+            </div>
+            <div className="mt-4 p-3 bg-gradient-to-r from-purple-600/20 to-pink-600/20 rounded-lg border border-purple-400/30">
+              <p className="text-sm text-purple-200">
+                <strong>🧠 ML Enhancement:</strong> Our Python-based machine learning models use Random Forest and Gradient Boosting algorithms 
+                to continuously improve scoring accuracy based on real market performance data.
+              </p>
             </div>
           </div>
         </div>

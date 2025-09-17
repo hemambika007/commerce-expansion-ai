@@ -50,26 +50,42 @@ Rajkot,Gujarat,Tier 2,1380000,45,30,52000,82,88,72,78,52,42,18,55,2,380,4,1,8,19
     { field: 'state', description: 'State where city is located', example: 'Maharashtra' },
     { field: 'tier', description: 'City tier classification', example: 'Tier 2' },
     { field: 'population', description: 'Total population', example: '1530000' },
+    
+    // Raw Demographics Data (we calculate demographic score from these)
     { field: 'age_18_35_percent', description: 'Percentage of population aged 18-35', example: '42' },
     { field: 'age_36_50_percent', description: 'Percentage of population aged 36-50', example: '28' },
     { field: 'avg_monthly_income', description: 'Average monthly household income (INR)', example: '45000' },
     { field: 'literacy_rate', description: 'Literacy rate percentage', example: '78' },
     { field: 'urbanization_percent', description: 'Urbanization percentage', example: '85' },
+    
+    // Raw Digital Data (we calculate digital score from these)
     { field: 'internet_users_percent', description: 'Internet penetration percentage', example: '68' },
     { field: 'smartphone_penetration', description: 'Smartphone adoption percentage', example: '72' },
     { field: 'digital_payment_users', description: 'Digital payment usage percentage', example: '45' },
     { field: 'social_media_users_percent', description: 'Social media users percentage', example: '38' },
+    
+    // Raw Competition Data (we calculate competition score from these)
     { field: 'existing_ecommerce_stores', description: 'Number of existing e-commerce stores', example: '25' },
     { field: 'local_retail_stores_per_1000', description: 'Local retail density per 1000 people', example: '60' },
     { field: 'market_leaders_present', description: 'Number of major e-commerce players present', example: '3' },
+    
+    // Raw Logistics Data (we calculate logistics score from these)
     { field: 'highway_connectivity_km', description: 'Highway connectivity in kilometers', example: '450' },
     { field: 'railway_stations', description: 'Number of railway stations', example: '5' },
     { field: 'airports_nearby', description: 'Number of airports within 100km', example: '1' },
     { field: 'warehouse_facilities', description: 'Number of warehouse facilities', example: '12' },
+    
+    // Raw Economic Data (we calculate economic score from these)
     { field: 'gdp_per_capita', description: 'GDP per capita (INR)', example: '180000' },
     { field: 'annual_growth_rate', description: 'Annual economic growth rate (%)', example: '7.2' },
     { field: 'industrial_units', description: 'Number of industrial units', example: '850' },
-    { field: 'employment_rate', description: 'Employment rate percentage', example: '82' }
+    { field: 'employment_rate', description: 'Employment rate percentage', example: '82' },
+    
+    // Additional Market Intelligence Data
+    { field: 'avg_delivery_distance_km', description: 'Average delivery distance from nearest hub', example: '45' },
+    { field: 'seasonal_demand_variation', description: 'Seasonal demand variation percentage', example: '25' },
+    { field: 'local_language_preference', description: 'Local language preference (Hindi/Regional)', example: 'Regional' },
+    { field: 'cash_on_delivery_preference', description: 'COD preference percentage', example: '75' }
   ];
 
   return (
