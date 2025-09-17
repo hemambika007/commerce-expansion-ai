@@ -32,9 +32,9 @@ const DataUpload = () => {
   }, []);
 
   const downloadTemplate = () => {
-    const csvContent = `city_name,state,tier,population,demographics_score,digital_score,competition_score,logistics_score,economic_score,total_sellers,active_sellers,fashion_sellers,home_sellers,electronics_sellers,beauty_sellers,sports_sellers,delivery_time_avg,delivery_cost_total,success_rate,customer_satisfaction
-Nashik,Maharashtra,Tier 2,1530000,85,68,92,88,91,12500,8750,3200,2800,1900,1650,950,2.8,65,94,4.3
-Rajkot,Gujarat,Tier 2,1380000,82,72,95,85,89,9800,7350,2800,2200,1600,1400,800,3.2,77,91,4.1`;
+    const csvContent = `city_name,state,tier,population,age_18_35_percent,age_36_50_percent,avg_monthly_income,literacy_rate,urbanization_percent,internet_users_percent,smartphone_penetration,digital_payment_users,social_media_users_percent,existing_ecommerce_stores,local_retail_stores_per_1000,market_leaders_present,highway_connectivity_km,railway_stations,airports_nearby,warehouse_facilities,gdp_per_capita,annual_growth_rate,industrial_units,employment_rate
+Nashik,Maharashtra,Tier 2,1530000,42,28,45000,78,85,68,72,45,38,25,60,3,450,5,1,12,180000,7.2,850,82
+Rajkot,Gujarat,Tier 2,1380000,45,30,52000,82,88,72,78,52,42,18,55,2,380,4,1,8,195000,8.1,920,85`;
     
     const blob = new Blob([csvContent], { type: 'text/csv' });
     const url = window.URL.createObjectURL(blob);
@@ -50,11 +50,26 @@ Rajkot,Gujarat,Tier 2,1380000,82,72,95,85,89,9800,7350,2800,2200,1600,1400,800,3
     { field: 'state', description: 'State where city is located', example: 'Maharashtra' },
     { field: 'tier', description: 'City tier classification', example: 'Tier 2' },
     { field: 'population', description: 'Total population', example: '1530000' },
-    { field: 'demographics_score', description: 'Demographics score (0-100)', example: '85' },
-    { field: 'digital_score', description: 'Digital penetration score (0-100)', example: '68' },
-    { field: 'competition_score', description: 'Competition analysis score (0-100)', example: '92' },
-    { field: 'logistics_score', description: 'Logistics infrastructure score (0-100)', example: '88' },
-    { field: 'economic_score', description: 'Economic indicators score (0-100)', example: '91' }
+    { field: 'age_18_35_percent', description: 'Percentage of population aged 18-35', example: '42' },
+    { field: 'age_36_50_percent', description: 'Percentage of population aged 36-50', example: '28' },
+    { field: 'avg_monthly_income', description: 'Average monthly household income (INR)', example: '45000' },
+    { field: 'literacy_rate', description: 'Literacy rate percentage', example: '78' },
+    { field: 'urbanization_percent', description: 'Urbanization percentage', example: '85' },
+    { field: 'internet_users_percent', description: 'Internet penetration percentage', example: '68' },
+    { field: 'smartphone_penetration', description: 'Smartphone adoption percentage', example: '72' },
+    { field: 'digital_payment_users', description: 'Digital payment usage percentage', example: '45' },
+    { field: 'social_media_users_percent', description: 'Social media users percentage', example: '38' },
+    { field: 'existing_ecommerce_stores', description: 'Number of existing e-commerce stores', example: '25' },
+    { field: 'local_retail_stores_per_1000', description: 'Local retail density per 1000 people', example: '60' },
+    { field: 'market_leaders_present', description: 'Number of major e-commerce players present', example: '3' },
+    { field: 'highway_connectivity_km', description: 'Highway connectivity in kilometers', example: '450' },
+    { field: 'railway_stations', description: 'Number of railway stations', example: '5' },
+    { field: 'airports_nearby', description: 'Number of airports within 100km', example: '1' },
+    { field: 'warehouse_facilities', description: 'Number of warehouse facilities', example: '12' },
+    { field: 'gdp_per_capita', description: 'GDP per capita (INR)', example: '180000' },
+    { field: 'annual_growth_rate', description: 'Annual economic growth rate (%)', example: '7.2' },
+    { field: 'industrial_units', description: 'Number of industrial units', example: '850' },
+    { field: 'employment_rate', description: 'Employment rate percentage', example: '82' }
   ];
 
   return (
