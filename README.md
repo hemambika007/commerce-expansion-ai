@@ -1,6 +1,6 @@
 # Tier 2/3 E-commerce Market Expansion Intelligence Platform
 
-A comprehensive business intelligence platform designed to analyze market expansion opportunities for e-commerce companies in Tier 2 and Tier 3 Indian cities. Built specifically to demonstrate strategic thinking and business acumen for roles like Meesho's Senior Associate position.
+A comprehensive business intelligence platform designed to analyze market expansion opportunities for e-commerce companies in Tier 2 and Tier 3 Indian cities. 
 
 ## 🎯 Project Overview
 
