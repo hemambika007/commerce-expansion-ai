@@ -96,7 +96,7 @@ The platform provides actionable insights such as:
 
 ## 🔍 Business Value Proposition
 
-### For Meesho-like Companies
+### For E-Commerce-based Companies
 - **Zero-commission model validation**: Analysis shows seller adoption rates 40% higher in Tier 2/3
 - **Localized assortment strategy**: Category preferences vary significantly by region
 - **Cost-effective expansion**: Tier 2/3 markets offer better unit economics
@@ -159,8 +159,6 @@ The platform includes comprehensive data for:
 - **5 key business categories** with growth projections
 - **3-year financial models** with detailed breakdowns
 - **Risk assessment frameworks** with mitigation strategies
-
-## 🎯 Perfect for Meesho Interview
 
 This project demonstrates:
 - **Strategic thinking**: Understanding of e-commerce expansion challenges
