@@ -128,7 +128,7 @@ Rajkot,Gujarat,Tier 2,1380000,45,30,52000,82,88,72,78,52,42,18,55,2,380,4,1,8,19
           
           <div className="mb-6">
             <div 
-              className={`border-2 border-dashed rounded-xl p-8 text-center transition-all ${
+              className={`border-2 border-dashed rounded-xl p-8 text-center transition-all relative ${
                 uploadStatus === 'success' ? 'border-green-300 bg-green-50' :
                 uploadStatus === 'error' ? 'border-red-300 bg-red-50' :
                 'border-gray-300 bg-gray-50 hover:border-indigo-400 hover:bg-indigo-50'
@@ -156,22 +156,21 @@ Rajkot,Gujarat,Tier 2,1380000,45,30,52000,82,88,72,78,52,42,18,55,2,380,4,1,8,19
                   </div>
                 </div>
               ) : (
-                <div className="space-y-4">
+                <div className="space-y-4 relative">
                   <Upload className="w-16 h-16 text-gray-400 mx-auto" />
                   <div>
                     <h3 className="text-lg font-semibold text-gray-700">Drop your CSV file here</h3>
                     <p className="text-gray-500">or click to browse</p>
                   </div>
+                  {uploadStatus !== 'uploading' && (
+                    <input
+                      type="file"
+                      accept=".csv"
+                      onChange={handleFileUpload}
+                      className="absolute inset-0 w-full h-full opacity-0 cursor-pointer"
+                    />
+                  )}
                 </div>
-              )}
-              
-              {uploadStatus !== 'uploading' && (
-                <input
-                  type="file"
-                  accept=".csv"
-                  onChange={handleFileUpload}
-                  className="absolute inset-0 w-full h-full opacity-0 cursor-pointer"
-                />
               )}
             </div>
           </div>
